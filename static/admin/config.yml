@@ -1,0 +1,54 @@
+backend:
+  name: git-gateway
+  branch: master
+  commit_messages:
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
+i18n:
+  # Required and can be one of multiple_folders, multiple_files or single_file
+  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+  structure: multiple_folders
+
+  # Required - a list of locales to show in the editor UI
+  locales: [fr, en]
+
+  # Optional, defaults to the first item in locales.
+  # The locale to be used for fields validation and as a baseline for the entry.
+  default_locale: fr
+
+local_backend: true
+media_folder: /content/projets
+public_folder: /img
+
+collections:
+  - name: "Projets"
+    label: "projets"
+    folder: "content/projets"
+    i18n:
+      structure: single_file
+      locales: [fr, en]    
+      default_locale: fr
+
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "projet",
+        }
+      - { label: "Title", name: "title", widget: "string", i18n: true}
+      - { label: "Position", name: "position", widget: "number", required: false, i18n: duplicate }
+      - { label: "Github", name: "github", widget: "string", required: false, i18n: duplicate }
+      - { label: "External link", name: "external", widget: "string", required: false,i18n: duplicate }
+      - { label: "Publish Date", name: "date", widget: "datetime",i18n: duplicate }
+      - { label: "Featured Post", name: "featured", widget: "boolean", required: false,i18n: duplicate }
+      - { label: "Featured Image", name: "featuredimage", widget: "image", required: false,i18n: duplicate }
+      - { label: "Body", name: "body", widget: "markdown", required: false,i18n: true }
+      - { label: "Techs", name: "techs", widget: "list",  allow_add: true,  max: 5, min: 1,i18n: true }

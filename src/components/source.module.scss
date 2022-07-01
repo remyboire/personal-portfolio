@@ -1,0 +1,30 @@
+.source {
+	position: absolute;
+	text-align: right;
+	right: 3rem;
+	padding-top: 3rem;
+	z-index: 110000000;
+	& .button {
+		border: 1px solid var(--accent);
+		padding: 0.7rem 1rem;
+		border-radius: 5px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		gap: 1ch;
+
+		&:hover {
+			border: 1px solid var(--accent-hover);
+		}
+		& svg {
+			height: 1rem;
+			margin: 0;
+			display: inline-block;
+		}
+	}
+}
+@media screen and (max-width: 1050px) {
+	.source {
+		display: none;
+	}
+}
