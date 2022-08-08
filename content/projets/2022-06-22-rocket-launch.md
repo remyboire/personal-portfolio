@@ -1,7 +1,6 @@
 ---
 fr:
-  body: "Ma solution pour le #ScrimbaChallengeWeek du 22/06/2022, lançons cette
-    fusée :)"
+  body: "Ma solution pour le #ScrimbaChallengeWeek du 22/06/2022, lançons cette fusée :)"
   github: https://github.com/remyboire/Rocket-Launch/
   templateKey: projet
   position: 8
@@ -19,7 +18,7 @@ en:
   github: https://github.com/remyboire/Rocket-Launch/
   external: https://remyboire.github.io/Rocket-Launch/
   title: Rocket Launch
-  body: "My solution to 22/06/2022 #ScrimbaChallengeWeek, let's launch this rocket
+  body: "My solution to 22/06/2022 #ScrimbaChallengeWeek, let's launch this rocket! :)
     :)"
   techs:
     - HTML

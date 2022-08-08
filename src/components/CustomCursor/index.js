@@ -1,9 +1,8 @@
 import React from 'react'
+import { useViewport } from '../../hooks/useViewport'
 import './style.scss'
-// import { useViewport } from '../../hooks/useViewport'
 
-const CustomCursor = () => {
-	// let { width } = useViewport()
+const Cursor = () => {
 	const dot = React.useRef()
 	const positionRef = React.useRef({
 		mouseX: -100,
@@ -80,6 +79,7 @@ const CustomCursor = () => {
 
 		return () => {
 			document.removeEventListener('mousemove', handleMove)
+			document.removeEventListener('click', handleClick)
 			document.querySelectorAll('.cursorFrame, a').forEach((link) => {
 				link.removeEventListener('mouseover', handleEnter)
 				link.removeEventListener('mouseout', handleOut)
@@ -98,6 +98,11 @@ const CustomCursor = () => {
 			</div>
 		</div>
 	)
+}
+function CustomCursor() {
+	const { isMobile } = useViewport()
+
+	return isMobile ? null : <Cursor />
 }
 
 export default CustomCursor

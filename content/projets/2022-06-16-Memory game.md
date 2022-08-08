@@ -13,9 +13,7 @@ fr:
     apprendre plus sur les class constructor. J'ai vraiment adoré créer les
     mécaniques du jeu.
 en:
-  body: I've launched the challenge of coding this game in one day to learn more
-    about the class constructor. I really loved creating the mechanics of the
-    game.
+  body: I challenged myself to code this game in one day in order to learn more about the class constructor. I really loved creating the mechanics of the game.
   github: https://github.com/remyboire/memory-game/
   position: 2
   external: https://remyboire.github.io/memory-game/public

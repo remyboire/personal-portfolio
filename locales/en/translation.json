@@ -1,8 +1,10 @@
 {
 	"Bonjour": "Hello",
-	"Voici quelques-uns de mes récents projets :": "Here are some of my recent projects :",
+	"Voici quelques projets récents :": "Here are some of my recent projects:",
 	"Et d'autres plus ou moins anciens :": "And some older projects:",
-	"Mon parcours": "My career",
+	"Mon parcours :": "My career:",
+	"Mes compétences techniques :": "My technical skills:",
+	"Quelques certifications :": "Some certifications:",
 	"On discute ?": "Let's talk together!",
 	"Merci pour votre message, je m'efforce de revenir vers vous au plus tôt !": "Thank you for your message, I will try to get back to you as soon as possible!",
 	"Votre Email :": "Your Email:",
@@ -13,12 +15,14 @@
 	"Passer en mode clair": "Switch to light mode",
 
 	"Je m'appelle Rémy, je suis développeur Front-End Junior !": "My name is Rémy, I'm a Junior Front-End Developer !",
-	"J’ai commencé à m’intéresser au développement lorsque j’ai eu à réaliser mon premier portfolio de jeune graphiste, il y a une dizaines d’années. J’ai du faire quelque chose bien loin des best-practices en m’appuyant sur 2/3 tutos du site du zéro.": "I started to interest in development when I had to make my first portfolio of young graphic designer, it was a few years ago. I had to do something far away from the best-practices by using 2/3 of the tutorials of the zero-zero website.",
-	"Au fil des ans, j’ai étendu mon intérêt pour le code en bidouillant des arduinos, en faisant et refaisant mon portfolio ou en customisant des thèmes tumblr...": "Over the years, I've extended my interest in code by tinkering with arduinos, making and re-making my portfolio or customizing tumblr themes...",
-	"J’ai récemment pris gout au code lorsque j’ai remarqué que tout mes petits bouts de connaissances commencaient à faire un ensemble cohérent. J’ai alors eu envie de reprendre un peu les bases en suivant de manière assidue la formation de scrimba.": "I've recently taken a gout at code when I noticed that all my small bits of knowledge started to make a coherent ensemble. I had then a desire to re-learn the basics of scrimba.",
-	"En parallèle, j’ai travaillé sur le site de swindler and swindler (le studio d’illustration de ma compagne), et le site d’une amie architecte, ainsi que ( beaucoup) d’exercices sur FrontEndMentor.": "In parallel, I've worked on the site of swindler and swindler (the studio of illustration of my girlfriend), and the site of one of my friend's architect, and (a lot) of exercises on FrontEndMentor.",
-	"Ces quelques mois d’apprentissage rigoureux me permettent aujourd’hui d’être plus confiant sur mes capacités en tant que développeur.": "These few months of rigorous learning allow me to be more confident in my skills as a developer.",
-	"C’est le moment name-dropping, voici une liste des technos dans lesquelles j’ai déjà mis le nez :": "It's the moment name-dropping, here is a list of technologies I've already put my nose to :",
+	"J’ai commencé à m’intéresser au développement lorsque j’ai eu à réaliser mon premier portfolio de jeune graphiste, il y a une dizaines d’années. J’ai du faire quelque chose bien loin des best-practices en m’appuyant sur 2/3 tutos du site du zéro.": "I became interested in development when I had to create my first portfolio as a young graphic designer. That was a few years ago. I had to do something that was far from best practices, so I used 2-3 tutorials from the OpenClassroom (named siteduzéro back in those days) website.",
+	"Au fil des ans, j’ai étendu mon intérêt pour le code en bidouillant des arduinos, en faisant et refaisant mon portfolio ou en customisant des thèmes tumblr...": "Over the years, I've extended my interest in code by tinkering with arduinos, remaking my portfolio, and customizing tumblr themes...",
+	"J’ai récemment pris gout au code lorsque j’ai remarqué que tout mes petits bouts de connaissances commencaient à faire un ensemble cohérent. J’ai alors eu envie de reprendre un peu les bases en suivant de manière assidue la formation de scrimba.": "I've recently taken a liking to code when I noticed that all my small bits of knowledge started to come together. I then had a desire to relearn the basics with Scrimba.",
+	"En parallèle, j’ai travaillé sur le site de swindler and swindler (le studio d’illustration de ma compagne), et le site d’une amie architecte, ainsi que ( beaucoup) d’exercices sur FrontEndMentor.": "In parallel, I've worked on the website for Swindler and Swindler (the illustration studio of my wife) and the site of one of my friend's architects. I've also done a lot of exercises on FrontEndMentor.",
+	"Ces quelques mois d’apprentissage rigoureux me permettent aujourd’hui d’être plus confiant sur mes capacités en tant que développeur.": "These few months of rigorous learning have allowed me to be more confident in my skills as a developer.",
+	"C’est le moment name-dropping, voici une liste des technos dans lesquelles j’ai déjà mis le nez :": "I'm name-dropping now, but here is a list of technologies that I have already worked with:",
+
+	"Développement": "Development",
 
 	"Développeur Front-end": "Front-end Developer",
 	"Fraichement sur le marché ;), n'hésitez pas à me contacter, j'étudie toute opportunité.": "Freshly on the market;), don't hesitate to contact me, I study all opportunities.",
@@ -33,7 +37,7 @@
 	"Opérateur graphiste pao": "Graphic Operator",
 	"Etigraph - Imprimerie d’étiquettes adhésives - Drumettaz-Clarafond": "Etigraph - Adhesive label printer - Drumettaz-Clarafond",
 
-	"Entièrement conçu and développé par moi-même": "Entirely designed and developed by me-myself",
+	"Entièrement conçu and développé par moi-même.": "Entirely designed and developed by myself",
 	"Ce portfolio utilise ": "This portfolio uses ",
 	", grande première pour moi.": ", first-time for me.",
 	"L'animation du haut de page a été fait en utilisant l'algo d'": "The header animation was made using the algo of ",

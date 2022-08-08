@@ -18,7 +18,7 @@ en:
   github: 'https://github.com/remyboire/interactive-rating-component/'
   external: 'https://remyboire.github.io/interactive-rating-component/public/'
   date: 2022-06-16T11:45:16.384Z
-  body: A flip card interactive for a notation system.
+  body: An interactive flip card  for a notation system.
   featured: false
   featuredimage: 
   techs:

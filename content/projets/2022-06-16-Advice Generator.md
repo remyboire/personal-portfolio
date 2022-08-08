@@ -5,7 +5,7 @@ fr:
   position: 4
   github: https://github.com/remyboire/advice-generator-app/
   external: https://remyboire.github.io/advice-generator-app/public/
-  body: Un petit challenge frontendMentor utilisant l'API Advice Slip  
+  body: Un petit challenge frontendMentor utilisant l'API Advice Slip.
   featured: false
   featuredimage: 
   techs:
@@ -17,7 +17,7 @@ en:
   position: 4
   github: https://github.com/remyboire/advice-generator-app/
   external: https://remyboire.github.io/advice-generator-app/public/
-  body: A small challenge frontendMentor using the API Advice Slip
+  body: A small challenge frontendMentor using the API Advice Slip.
   featured: false
   featuredimage: 
   techs:

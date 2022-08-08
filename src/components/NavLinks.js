@@ -2,6 +2,9 @@ import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import { navLinks } from '../config'
 import { useI18next } from 'gatsby-plugin-react-i18next'
+import UseInView from '../hooks/UseInView'
+import { anim } from '../config'
+import { motion, MotionConfig } from 'framer-motion'
 
 const NavLinks = ({ handleToggle }) => {
 	const data = useStaticQuery(graphql`
@@ -46,27 +49,31 @@ const NavLinks = ({ handleToggle }) => {
 	}
 	return (
 		<>
-			<ul>
-				{navLinks &&
-					navLinks[0][lng].map((link, i) => (
-						<li key={i} data-menu-item={link.name.replace(/ /g, '-').toLowerCase()}>
-							<Link className='cursorFrame' to={link.url} onClick={handleToggle}>
-								{link.name}
-							</Link>
-							{link.subMenu && link.subMenu.length > 0 ? (
-								<ol className='submenu' aria-label='submenu'>
-									{link.subMenu.map((subLink) => (
-										<li key={subLink.name} data-menu-item={subLink.name.replace(/ /g, '-').toLowerCase()}>
-											<Link className='cursorFrame' to={subLink.url} onClick={handleToggle}>
-												{subLink.name}
-											</Link>
-										</li>
-									))}
-								</ol>
-							) : null}
-						</li>
-					))}
-			</ul>
+			<UseInView>
+				<ul>
+					{navLinks &&
+						navLinks[0][lng].map((link, i) => (
+							<li key={i} data-menu-item={link.name.replace(/ /g, '-').toLowerCase()}>
+								<motion.div variants={anim}>
+									<Link className='cursorFrame' to={link.url} onClick={handleToggle}>
+										{link.name}
+									</Link>
+								</motion.div>
+								{link.subMenu && link.subMenu.length > 0 ? (
+									<ol className='submenu' aria-label='submenu'>
+										{link.subMenu.map((subLink) => (
+											<motion.li key={subLink.name} data-menu-item={subLink.name.replace(/ /g, '-').toLowerCase()} variants={anim}>
+												<Link className='cursorFrame' to={subLink.url} onClick={handleToggle}>
+													{subLink.name}
+												</Link>
+											</motion.li>
+										))}
+									</ol>
+								) : null}
+							</li>
+						))}
+				</ul>
+			</UseInView>
 		</>
 	)
 }

@@ -1,7 +1,7 @@
 ---
 fr:
   title: L'architecterie
-  position: 1
+  position: 3
   github: ""
   external: https://larchitecterie.fr
   date: 2022-06-16T10:45:16.384Z
@@ -14,13 +14,13 @@ fr:
     - Website Carbon
 en:
   title: L'architecterie
-  position: 1
+  position: 3
   github: ""
   external: https://larchitecterie.fr
   date: 2022-06-16T10:45:16.384Z
   featured: true
   featuredimage: './larchitecterie.jpg'
-  body: The choice of technologies was oriented by the values of the workshop and the processing of images was thought to reduce the footprint of the site, this processing allowed to reduce the weight of images until 10 times. The main constraint was the time of realization, because it had to be produced in 3 days (Ui + dev). It remains - largely :) - perfectible.
+  body: The choice of technologies was oriented by the values of the workshop. We thought to process the images to reduce the footprint of the site. This action allowed to reduce the weight of images up to 10 times while maintaining consistency among all media. The main constraint was the time of realization, because it had to be produced in 3 days (Ui + dev). It remains – largely :) – perfectible.
   techs:
     - Kirby
     - Hyperdither

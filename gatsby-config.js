@@ -16,7 +16,7 @@ module.exports = {
 		`gatsby-plugin-sharp`,
 		`gatsby-transformer-sharp`, // Needed for dynamic images
 		`gatsby-plugin-robots-txt`,
-
+		'gatsby-plugin-postcss',
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {

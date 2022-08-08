@@ -1,10 +1,16 @@
 import * as React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+// @ts-ignore
 import * as style from './featured.module.scss'
 import { Icon } from '../../src/icons'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import { Trans } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import { useI18next } from 'gatsby-plugin-react-i18next'
+import UseInView from '../hooks/UseInView'
+import { motion } from 'framer-motion'
+import { anim, fadeFromLeft } from '../config'
+import Title from '../components/Title'
+import UseParallax from '../hooks/UseParallax'
 
 const Featured = () => {
 	const data = useStaticQuery(graphql`
@@ -49,7 +55,7 @@ const Featured = () => {
 		}
 	`)
 	const projets = data.projets.edges.filter(({ node }) => node)
-
+	const { t } = useTranslation()
 	const lng = useI18next().language
 
 	const projetsInner = (node, i, lang) => {
@@ -58,10 +64,21 @@ const Featured = () => {
 
 		return (
 			<div className={`${style.inner} menu-section`} id={title.replace(/ /g, '-')}>
-				<div className={style.frameWrapper}>
-					<GatsbyImage image={image} alt={title} className='img' />
-				</div>
-				<div className={style.info}>
+				<UseParallax amount={1}>
+					<div className={style.frameWrapper}>
+						<div className='bg-background'>
+							<motion.div variants={anim} initial='initial' whileInView='triggered'>
+								<GatsbyImage image={image} alt={title} className='img' />
+							</motion.div>
+						</div>
+					</div>
+				</UseParallax>
+				<motion.div //
+					variants={fadeFromLeft}
+					initial='initial'
+					whileInView='triggered'
+					className={`${style.info} z-10`}
+				>
 					<div className='font-s dimmed font-light'>
 						<Trans>Projet</Trans> {i < 10 ? '0' + (i + 1) : i + 1}
 					</div>
@@ -104,22 +121,17 @@ const Featured = () => {
 							))}
 						</ul>
 					</footer>
-				</div>
+				</motion.div>
 			</div>
 		)
 	}
 	return (
-		<section className='section' id='featured'>
-			<h2 className='font-xxl lh-1 text-shadow font-light spacing-block'>
-				<Trans>Voici quelques-uns de mes récents projets :</Trans>
-			</h2>
-			{projets &&
-				projets.map(({ node }, i) => (
-					<div key={i} className={style.project + ' snap '}>
-						{projetsInner(node, i, lng)}
-					</div>
-				))}
-		</section>
+		projets &&
+		projets.map(({ node }, i) => (
+			<div key={i} className={style.project + ' snap '}>
+				{projetsInner(node, i, lng)}
+			</div>
+		))
 	)
 }
 

@@ -1,7 +1,7 @@
 ---
 fr:
   title: Swindler & Swindler
-  position: 3
+  position: 2
   github: ""
   external: https://swindlerandswindler.com
   date: 2022-06-16T11:11:28.046Z
@@ -15,7 +15,7 @@ fr:
   body: Le site web le plus complexe que j'ai eu à développer, l'occasion pour moi d'en apprendre plus sur les transitions de page et la manipulation du DOM.
 en:
   title: Swindler & Swindler
-  position: 3
+  position: 2
   github: ""
   external: https://swindlerandswindler.com
   date: 2022-06-16T11:11:28.046Z
@@ -26,5 +26,5 @@ en:
     - Kirby
     - Barba.js
     - Gsap.js
-  body: The most complex website I've ever built, the opportunity to learn more about transitions and DOM manipulation.
+  body: The most complex website I've ever built, the opportunity to learn more about transitions and DOM manipulation. Was a great learning experience but a bit to big for me when I started it.
 ---

@@ -4,8 +4,6 @@
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	gap: 1rem;
 	--width: 85vw;
-	padding-top: 5rem;
-	padding-bottom: 5rem;
 	.inner {
 		flex-grow: 1;
 		height: 100%;
@@ -69,8 +67,8 @@
 		display: flex;
 		flex-direction: row;
 		gap: 1rem;
-		--width: calc(100vw - 4rem);
-		padding-block: 5rem;
+		--width: calc(100vw - 6rem);
+		padding-block: 4rem;
 		margin-left: -2rem;
 	}
 	.wrapper::-webkit-scrollbar {
@@ -78,7 +76,6 @@
 	}
 	.inner {
 		width: var(--width);
-
 		scroll-snap-align: center;
 		display: flex;
 		flex-direction: column;
@@ -88,11 +85,11 @@
 		border-radius: 25px;
 		padding-block: 2rem;
 	}
-	.inner:first-child {
-		margin-left: 2rem;
+	.wrapper > div:first-child {
+		margin-left: 3rem;
 	}
-	.inner:last-child {
-		margin-right: 2rem;
+	.wrapper > div:last-child {
+		margin-right: 32rem;
 	}
 }
 .inner > div {
